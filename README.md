@@ -29,6 +29,7 @@ The mobile-friendly, responsive, and lightweight jQuery date & time input picker
 
 ## Example For Thai Language
 
+```javascript
  var picker_option = {
 	format: 'dd mmmm yyyy',
 	formatSubmit: 'yyyy-mm-dd',
@@ -42,8 +43,9 @@ The mobile-friendly, responsive, and lightweight jQuery date & time input picker
 };
 var $input = $( '.datepicker' ).pickadate(picker_option);
 
-var picker = $input.pickadate('picker')
+var picker = $input.pickadate('picker');
 
+```
 
 
 <br>
