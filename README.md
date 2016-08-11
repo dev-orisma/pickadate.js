@@ -27,6 +27,23 @@ The mobile-friendly, responsive, and lightweight jQuery date & time input picker
 `bower install pickadate`
 
 
+## Example For Thai Language
+
+ var picker_option = {
+	format: 'dd mmmm yyyy',
+	formatSubmit: 'yyyy-mm-dd',
+	selectYears: 60,
+	selectMinYears: 60,
+	selectMonths: true,
+	today: false,
+	clear: false,
+	close: false,
+	isBe: true
+};
+var $input = $( '.datepicker' ).pickadate(picker_option);
+
+var picker = $input.pickadate('picker')
+
 
 
 <br>
