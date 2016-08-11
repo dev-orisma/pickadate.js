@@ -33,9 +33,7 @@
 
         <form>
             <fieldset>
-                <h3><label for="input_01">Pick a date. Go ahead...</label></h3>
-
-                <input type="text">
+                <h3><label for="input_01">Example for thai language</label></h3>
                 <input
                     id="input_01"
                     class="datepicker"
@@ -43,8 +41,7 @@
                     type="text"
                     autofocuss
                     value="14 August, 2014"
-                    data-valuee="2014-08-08">
-                <input type="text">
+                    data-value="2559-08-08">
 
                 <br><br><br><br><br>
                 <!-- <button type="button">Disable all dates</button>
@@ -52,13 +49,6 @@
             </fieldset>
         </form>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <div id="container"></div>
-
-        <input type="text">
 
     </section>
 
@@ -67,17 +57,22 @@
     <script src="../../lib/picker.js"></script>
     <script src="../../lib/picker.date.js"></script>
     <script src="../../lib/legacy.js"></script>
+    <script src="../../lib/translations/th_TH.js"></script>
 
     <script type="text/javascript">
 
-        var $input = $( '.datepicker' ).pickadate({
-            formatSubmit: 'yyyy/mm/dd',
-            // min: [2015, 7, 14],
-            container: '#container',
-            // editable: true,
-            closeOnSelect: false,
-            closeOnClear: false,
-        })
+            var picker_option = {
+				format: 'dd mmmm yyyy',
+				formatSubmit: 'yyyy-mm-dd',
+				selectYears: 60,
+				selectMinYears: 60,
+				selectMonths: true,
+				today: false,
+				clear: false,
+				close: false,
+				isBe: true
+			};
+        var $input = $( '.datepicker' ).pickadate(picker_option);
 
         var picker = $input.pickadate('picker')
         // picker.set('select', '14 October, 2014')

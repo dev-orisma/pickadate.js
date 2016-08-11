@@ -20,7 +20,7 @@ The mobile-friendly, responsive, and lightweight jQuery date & time input picker
 
 *or*
 
-`git clone git://github.com/amsul/pickadate.js.git`
+`https://github.com/dev-orisma/pickadate.js.git`
 
 *or*
 
